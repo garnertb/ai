@@ -24,6 +24,30 @@
 			},
 			"detail": "Create a new skill from the skills template",
 			"problemMatcher": []
+		},
+		{
+			"label": "Format Skills",
+			"type": "shell",
+			"command": "npm run format",
+			"group": "none",
+			"icon": {
+				"id": "wand",
+				"color": "terminal.ansiBlue"
+			},
+			"detail": "Format all skill markdown files using Prettier",
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Format",
+			"type": "shell",
+			"command": "npm run format:check",
+			"group": "test",
+			"icon": {
+				"id": "symbol-color",
+				"color": "terminal.ansiBlue"
+			},
+			"detail": "Check formatting of skill markdown files without modifying them",
+			"problemMatcher": []
 		}
 	],
 	"inputs": [
