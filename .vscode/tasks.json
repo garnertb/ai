@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Validate Skills",
+			"type": "shell",
+			"command": "./scripts/validate-skills",
+			"group": "test",
+			"icon": {
+				"id": "beaker",
+				"color": "terminal.ansiMagenta"
+			},
+			"detail": "Validate all skill files using the skills-ref validator",
+			"problemMatcher": []
+		},
+		{
+			"label": "Create New Skill",
+			"type": "shell",
+			"command": "mkdir -p ./skills/${input:skillName} && curl -sL https://raw.githubusercontent.com/anthropics/skills/main/template/SKILL.md -o ./skills/${input:skillName}/SKILL.md && echo 'Created skill: ${input:skillName}' && code ./skills/${input:skillName}/SKILL.md",
+			"group": "none",
+			"icon": {
+				"id": "add",
+				"color": "terminal.ansiGreen"
+			},
+			"detail": "Create a new skill from the skills template",
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "skillName",
+			"type": "promptString",
+			"description": "Enter the name for the new skill (e.g., my-new-skill)"
+		}
+	]
+}
