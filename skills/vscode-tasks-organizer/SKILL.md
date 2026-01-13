@@ -1,15 +1,15 @@
 ---
 name: vscode-tasks-organizer
 description:
-  Review and improve VS Code tasks.json for consistency and developer
-  experience.
+  Guide for creating or modifying VS Code tasks.json files with a focus on
+  developer experience.
 metadata:
   author: garnertb
-  version: "1.0"
+  version: "1.1"
 ---
 
-Review the VS Code `tasks.json` file for consistency and developer experience
-improvements.
+This skill helps you organize VS Code `tasks.json` files for consistency and
+developer experience improvements.
 
 ## Analysis Steps
 
